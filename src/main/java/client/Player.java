@@ -38,4 +38,14 @@ public class Player
 	this.balance = balance;
     }
 
+    public void increaseBalance(int num)
+    {
+	this.balance += num;
+    }
+
+    public void decreaseBalance(int num)
+    {
+	this.balance -= num;
+    }
+
 }

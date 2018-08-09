@@ -25,11 +25,7 @@ public class Client
 	in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
 	out = new PrintWriter(socket.getOutputStream(), true);
 
-	for (int i = 0; i < 2; i++)
-	{
-	    System.out.println(in.readLine() + "\n");
-	}
-
+	System.out.println("Connection created");
     }
 
     public void communicate() throws IOException
@@ -37,10 +33,15 @@ public class Client
 
 	while (true)
 	{
-	    System.out.println("New Content: ");
+	    while (in.ready())
+	    {
+		System.out.println(in.readLine() + "\n");
+	    }
+
 	    BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 	    String content = br.readLine();
 
+	    System.out.println("eddig--------kliens-------------------");
 	    out.println(content);
 	    String response;
 	    try

@@ -2,6 +2,8 @@ package server;
 
 import java.net.ServerSocket;
 
+import client.Player;
+
 public class Server
 {
     public static void main(String[] args) throws Exception
@@ -13,7 +15,7 @@ public class Server
 	{
 	    while (true)
 	    {
-		new Casino(listener.accept()).start();
+		new Casino(listener.accept(), new Player("Balint", 1000)).start();
 	    }
 	}
 	finally
