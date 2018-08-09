@@ -1,0 +1,18 @@
+This game is based on real-life roulette tables.   
+
+Bet                    | Pays | Probability Win | House Edge  
+Red                    | 1    | 47.37%          | 5.26%       
+Black                  | 1    | 47.37%          | 5.26%       
+Odd                    | 1    | 47.37%          | 5.26%       
+Even                   | 1    | 47.37%          | 5.26%       
+1 to 18                | 1    | 47.37%          | 5.26%       
+19 to 36               | 1    | 47.37%          | 5.26%       
+1 to 12                | 2    | 31.58%          | 5.26%       
+13 to 24               | 2    | 31.58%          | 5.26%       
+25 to 36               | 2    | 31.58%          | 5.26%       
+Six line (6 numbers)   | 5    | 15.79%          | 5.26%       
+First five (5 numbers) | 6    | 13.16%          | 7.89%       
+Corner (4 numbers)     | 8    | 10.53%          | 5.26%       
+Street (3 numbers)     | 11   | 7.895%          | 5.26%       
+Split (2 numbers)      | 17   | 5.26%           | 5.26%       
+Any one number         | 35   | 2.62%           | 5.26%
